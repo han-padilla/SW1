@@ -1,0 +1,48 @@
+/*
+Write a program that allows the user to select an arithmetic operator 
+to be applied to the two floating numbers inputted by the user using a switch statement.
+*/
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	float num1, num2;
+	float a, b, c, d;
+	int operation;
+
+	cout << "Enter the first number : ";
+	cin >> num1;
+	cout << "Enter the second number : ";
+	cin >> num2;
+	cout << "\n[+ , - , * , /]";
+	cout << "\n(1 for addition) (2 for subtraction) (3 for multiplication) (4 for division)";
+	cout << "\nInput a number to choose an operation : ";
+	cin >> operation;
+
+	switch (operation)
+	{
+	case 1:
+		a = num1 + num2;
+		cout << "The sum is " << a;
+		break;
+
+	case 2:
+		b = num1 - num2;
+		cout << "The difference is " << b;
+		break;
+
+	case 3:
+		c = num1 * num2;
+		cout << "The product is " << c;
+		break;
+
+	case 4:
+		d = num1 / num2;
+		cout << "The quotient is " << d;
+		break;
+	}
+
+	return 0;
+}
